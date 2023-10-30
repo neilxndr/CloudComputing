@@ -3,8 +3,8 @@ import boto3
 from botocore.exceptions import ClientError
 import os
 
-s31 = boto3.resource('s3')
-s3 = boto3.client('s3')
+s31 = boto3.resource('s3') # for viewing resources
+s3 = boto3.client('s3')  # for operations on bucket
 ##response = s3.list_buckets()
 ##buckets = [bucket['Name'] for bucket in response['Buckets']]
 ##print("Bucket List : %s" % buckets)
